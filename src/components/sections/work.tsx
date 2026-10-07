@@ -91,7 +91,6 @@ function ProjectRow({
               src={project.image.src}
               alt={project.image.alt[locale]}
               fill
-              quality={90}
               sizes="(min-width: 768px) 58vw, 100vw"
               className="object-cover object-top transition-transform duration-[1.4s] ease-out-expo group-hover:scale-[1.045]"
             />
