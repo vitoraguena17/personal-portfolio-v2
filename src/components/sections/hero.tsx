@@ -11,10 +11,10 @@ export function Hero({ dict, lang }: { dict: Dictionary; lang: string }) {
   const t = dict.hero;
 
   return (
-    <Spotlight className="group/spot relative isolate flex min-h-svh flex-col overflow-hidden">
+    <Spotlight className="group/spot relative isolate flex flex-col overflow-hidden md:min-h-svh">
       <HeroBackdrop />
 
-      <ScrollFade className="relative mx-auto flex w-full max-w-[1440px] flex-1 flex-col px-5 pb-10 pt-28 md:px-10 md:pb-12 md:pt-36">
+      <ScrollFade className="relative mx-auto flex w-full max-w-[1440px] flex-1 flex-col px-5 pb-14 pt-28 md:px-10 md:pb-12 md:pt-36">
         <div className="flex animate-fade items-center justify-between font-mono text-[11px] uppercase tracking-[0.2em] text-muted">
           <p className="flex items-center gap-2.5">
             <span className="size-1.5 animate-pulse-dot rounded-full bg-blue" />
@@ -29,7 +29,7 @@ export function Hero({ dict, lang }: { dict: Dictionary; lang: string }) {
           as="h1"
           trigger="load"
           lines={t.lines}
-          className="mt-auto pt-16 text-[clamp(3.1rem,12.5vw,10.5rem)] font-medium leading-[0.9] tracking-[-0.055em]"
+          className="mt-20 text-[13.5vw] font-medium leading-[0.9] tracking-[-0.055em] md:mt-auto md:pt-16 md:text-[clamp(3.1rem,12.5vw,10.5rem)]"
         />
 
         <div className="mt-12 grid gap-10 md:mt-16 md:grid-cols-12 md:items-end">
